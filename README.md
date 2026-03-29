@@ -12,14 +12,14 @@
 
 ## 运行环境说明
 
-*Python Version: 3.6.4
-*OS: Linux 4.14.105-19-0024
-*Processor: x86_64
-*PyTorch Version: 1.1.0
-*NumPy Version: 1.16.3
-*Matplotlib Version: 3.1.2
-*Seaborn Version: 0.9.0
-*Scikit-learn Version: 0.21.1
+* Python Version: 3.6.4
+* OS: Linux 4.14.105-19-0024
+* Processor: x86_64
+* PyTorch Version: 1.1.0
+* NumPy Version: 1.16.3
+* Matplotlib Version: 3.1.2
+* Seaborn Version: 0.9.0
+* Scikit-learn Version: 0.21.1
 
 **一键安装依赖**  
 ```bash
