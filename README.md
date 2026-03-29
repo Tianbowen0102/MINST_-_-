@@ -29,7 +29,7 @@
 
 ## 在线预览
 * 项目HTML链接(可用htmlpreview.github.io打开)
-  #### https://raw.githubusercontent.com/Tianbowen0102/MINST_-_-/refs/heads/main/MINST_%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB_%E5%AE%8C%E6%95%B4%E9%A1%B9%E7%9B%AE.html
+  #### [点击查看]https://raw.githubusercontent.com/Tianbowen0102/MINST_-_-/refs/heads/main/MINST_%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB_%E5%AE%8C%E6%95%B4%E9%A1%B9%E7%9B%AE.html
 * 和鲸社区项目链接
   #### [点击查看]https://www.heywhale.com/mw/project/69c79f3e1b11dd7cda7c6a0b
 ---
