@@ -22,9 +22,10 @@
 * Scikit-learn Version: 0.21.1
 ---
 ## 项目HTML链接
+### 见附件
 ---
 ## 和鲸社区项目链接
-(https://www.heywhale.com/mw/project/69c79f3e1b11dd7cda7c6a0b)
+### https://www.heywhale.com/mw/project/69c79f3e1b11dd7cda7c6a0b
 ---
 
 **一键安装依赖**  
