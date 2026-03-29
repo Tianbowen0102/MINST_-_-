@@ -1,0 +1,109 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <title>MINST_手写数字识别_完整项目 - Heywhale.com</title>
+  <link href="//cdn.kesci.com/favicon.ico" type="image/x-icon" rel="shortcut icon">
+  <link href="https://cdn.kesci.com/nb_render/styles.css?v=201116" rel="stylesheet">
+  <link href="/static/nbrender.css" rel="stylesheet">
+</head>
+
+<body class="nbviewer">
+  <div class="container container-main">
+    <div id="notebook">
+      <div id="notebook-container">
+        <div class="k-loading-spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://static.kesci.com/lib/jquery/2.2.1/jquery.min.js"></script>
+  <script>
+    (function () {
+      function writeHTML(sourceStr) {
+        var headLibs = [
+          'https://static.kesci.com/lib/jquery/2.2.1/jquery.min.js',
+          'https://static.kesci.com/lib/require.js/2.1.22/require.min.js',
+          // 'https://static.kesci.com/lib/moment.js/2.8.4/moment.min.js',
+          'https://static.kesci.com/lib/twitter-bootstrap/3.3.7/js/bootstrap.min.js'
+        ];
+
+        var bodyLibs = [
+          '/static/nbrender.js',
+          'https://static.kesci.com/lib/mathjax/3.2.2/tex-svg.js'
+        ];
+
+        function makeScript(url) {
+          return '<script src="' + url + '"><\/script>';
+        }
+
+        // 检查是否已存在 notebook 容器
+        const hasNotebookContainer = document.querySelector('#notebook-container');
+
+        // 构建头部脚本标签
+        const headScripts = headLibs.map(makeScript).join('\n');
+        const bodyScripts = bodyLibs.map(makeScript).join('\n');
+
+        // 构建HTML前半部分
+        const htmlStart = [
+          '<!DOCTYPE html>',
+          '<html lang="zh-cmn-Hans">',
+          '<head>',
+          document.querySelector('head').innerHTML,
+          headScripts,
+          '</head>',
+          '<body class="nbviewer">',
+          '<div class="container container-main">'
+        ].join('\n');
+
+        // 根据容器存在情况构建不同的包装结构
+        const contentWrapper = hasNotebookContainer
+          ? { start: '', end: '</div>' }
+          : { start: '<div id="notebook"><div id="notebook-container">', end: '</div></div></div>' };
+
+        // 构建HTML后半部分
+        const htmlEnd = [
+          contentWrapper.end,
+          bodyScripts,
+          '</body>',
+          '</html>'
+        ].join('\n');
+
+        // 组装完整HTML
+        const fullHTML = htmlStart + contentWrapper.start + sourceStr + htmlEnd;
+
+        document.open();
+        document.write(fullHTML);
+        document.close();
+      }
+
+      var loadRetry = 0;
+
+      function loadRemoteContent() {
+        jQuery.ajax({
+          method: 'GET',
+          url: 'https://s3.cn-north-1.amazonaws.com.cn/kesci-nbrender-content/20260329/70ee430c-189b-42fe-84a6-ebf552ea7864.html.gz',
+          dataType: 'text',
+          success: function (sourceStr) {
+            writeHTML(sourceStr);
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+            loadRetry++;
+            if (loadRetry < 5) {
+              window.setTimeout(loadRemoteContent, 3000);
+            } else {
+              document.querySelector('body').textContent = ['加载失败', errorThrown.toString(),].join(' ');
+            }
+          }
+        });
+      }
+      loadRemoteContent();
+    })();
+  </script>
+
+
+
+</body>
