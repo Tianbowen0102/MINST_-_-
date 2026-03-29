@@ -27,6 +27,10 @@
 ## 和鲸社区项目链接
 ### https://www.heywhale.com/mw/project/69c79f3e1b11dd7cda7c6a0b
 ---
+## 项目截图
+* 训练曲线对比
+* 混淆矩阵（测试集）
+* 错误样本分析
 
 **一键安装依赖**  
 ```bash
