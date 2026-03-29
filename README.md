@@ -30,11 +30,11 @@
 ---
 ## 项目截图
 * 训练曲线对比
-  ### https://cdn.kesci.com/upload/rt/4E364D37E9F44757A40E5F2EA9AAFE80/tclznk1pfj.png
+  #### https://cdn.kesci.com/upload/rt/4E364D37E9F44757A40E5F2EA9AAFE80/tclznk1pfj.png
 * 混淆矩阵（测试集）
-  ### https://cdn.kesci.com/upload/rt/4827A859479B42A38223BB497FA229A4/tcm32f55ai.png
+  #### https://cdn.kesci.com/upload/rt/4827A859479B42A38223BB497FA229A4/tcm32f55ai.png
 * 错误样本分析
-  ### https://cdn.kesci.com/upload/rt/D1FA079B7546435B8B439559C34093C8/tcm33mn2y8.png
+  #### https://cdn.kesci.com/upload/rt/D1FA079B7546435B8B439559C34093C8/tcm33mn2y8.png
 **一键安装依赖**  
 ```bash
 pip install torch torchvision numpy matplotlib seaborn scikit-learn
