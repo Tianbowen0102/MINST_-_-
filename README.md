@@ -6,20 +6,20 @@
 
 - **数据集**：MNIST（60000 训练，10000 测试）
 - **任务**：10 类手写数字识别
-- **最佳模型**：CNN（测试准确率 99.2%）
+- **最佳模型**：CNN（测试准确率 98.60%）
 
 ---
 
 ## 运行环境说明
 
-| 工具 | 版本 / 说明 |
-|------|-------------|
-| Python | 3.8+ |
-| PyTorch | 1.10+ |
-| NumPy | 1.21+ |
-| Matplotlib | 3.5+ |
-| Seaborn | 0.11+ |
-| Scikit-learn | 1.0+ |
+*Python Version: 3.6.4
+*OS: Linux 4.14.105-19-0024
+*Processor: x86_64
+*PyTorch Version: 1.1.0
+*NumPy Version: 1.16.3
+*Matplotlib Version: 3.1.2
+*Seaborn Version: 0.9.0
+*Scikit-learn Version: 0.21.1
 
 **一键安装依赖**  
 ```bash
