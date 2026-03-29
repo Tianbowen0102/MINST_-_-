@@ -20,6 +20,13 @@
 * Matplotlib Version: 3.1.2
 * Seaborn Version: 0.9.0
 * Scikit-learn Version: 0.21.1
+---
+## 项目HTML链接
+[HTML链接](file:///C:/Users/LENOVO/Desktop/%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/MINST_%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB_%E5%AE%8C%E6%95%B4%E9%A1%B9%E7%9B%AE.html)
+---
+## 和鲸社区项目链接
+[和鲸社区项目链接](https://www.heywhale.com/mw/project/69c79f3e1b11dd7cda7c6a0b)
+---
 
 **一键安装依赖**  
 ```bash
